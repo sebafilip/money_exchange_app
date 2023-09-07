@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://cdn.jsdelivr.net/gh/akjpro/form-anticlear/base.js"></script>
+    <style>
+    .bolded { font-weight: bold; font-size: 28px; }
+    </style>
+</head>
+<body style="background-color:#A9BF9E"><center>
+    <h1>Currency converter of Czech crowns</h1>
+
+    <br>
+
+    <h2>You can buy or sell the following currencies EUR, GBP and USD for CZK.</h2>
+
+    <p>This application works according to the current CNB exchange rate list. The sale and purchase of foreign currencies is from the perspective of the customers, not the bank.</p>
+
+    <br>
+    <hr> 
+    <br>  
+
+    <form method="POST" class="form-anticlear">
+        
+    <label for="buy_or_sell">Do you want buy or sell:</label>
+    <select id="buy_or_sell" name="buy_or_sell">
+        <option value="buy">Buy</option>
+        <option value="sell">Sell</option>
+    </select>
+
+    <br>
+    <br>
+
+    <label for="currency">Choose currency:</label>   
+    <select id="currency" name="currency">
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="USD">USD</option>
+    </select>
+
+    <br>
+    <br>
+    <label for="amount">Amount:</label>
+        <input type="number" step="any" min="0" name="amount">
+        <input type="submit">
+    </form>
+    <br>
+    <hr>
+    {{amount}} <span class ="bolded"> {{ result }} </span>
+    <br>
+    <br>
+    {{ text }}
+</center></body>
+</html>
