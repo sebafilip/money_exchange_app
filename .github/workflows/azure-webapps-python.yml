@@ -25,7 +25,7 @@ env:
 
 on:
   schedule:
-  - cron: '46 6 * * *'
+  - cron: '0 7 * * *'
 
 permissions:
   contents: read
