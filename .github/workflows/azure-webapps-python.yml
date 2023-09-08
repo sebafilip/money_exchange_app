@@ -17,7 +17,7 @@
 # For more information on the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # For more samples to get started with GitHub Action workflows to deploy to Azure: https://github.com/Azure/actions-workflow-samples
 
-name: Build and deploy Python app to Azure Web App
+name: Scheduled deployment
 
 env:
   AZURE_WEBAPP_NAME: your-app-name  # set this to the name of your Azure Web App
@@ -25,7 +25,7 @@ env:
 
 on:
   schedule:
-  - cron: '30 6 * * *'
+  - cron: '39 6 * * *'
 
 permissions:
   contents: read
