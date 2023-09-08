@@ -20,11 +20,8 @@
 name: Schedule deployment - money-exchange
 
 on:
-  push:
-    branches:
-      - main
   schedule:
-    - cron: '42 9 * * *'
+    - cron: '50 9 * * *'
 
 jobs:
   build:
