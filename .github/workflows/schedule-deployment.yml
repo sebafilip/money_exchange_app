@@ -21,7 +21,7 @@ name: Schedule deployment - money-exchange
 
 on:
   schedule:
-    - cron: '16 9 * * *'
+    - cron: '30 9 * * *'
 
 jobs:
   build:
